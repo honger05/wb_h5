@@ -1,1 +1,2 @@
-# wb_h5
+# bolierplate_manager
+the manager system by webpack
