@@ -25,7 +25,7 @@ var route = [
 var devConfig = {
   entry: {
     devServer: 'webpack/hot/dev-server',
-    common: ['jquery', 'handlebars', 'ionic', 'common']
+    common: ['jquery', 'handlebars', 'common']
   },
   output: {
     path: distPath,
@@ -46,7 +46,6 @@ var devConfig = {
     alias: {
       'jquery': path.join(config.path.gallery, '/lib/jquery'),
       'handlebars': path.join(config.path.gallery, '/lib/handlebars'),
-      'ionic': path.join(config.path.gallery, '/ionic/js/ionic'),
       'common': path.join(config.path.gallery, '/common/common')
     }
   },
@@ -108,9 +107,6 @@ var devConfig = {
       {
         test: path.join(config.path.gallery, '/common/common'),
         loader: 'expose?CMN'
-      },{
-        test: path.join(config.path.gallery, '/ionic/js/ionic'),
-        loader: 'expose?ionic'
       },
       {
         test: /\.(woff|woff2|eot|ttf|svg)(\?.*$|$)/,
