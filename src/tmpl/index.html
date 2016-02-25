@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="ionic" lang="en">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>首页</title>
@@ -7,26 +7,47 @@
 </head>
 <body>
 
-  <ion-tabs class="tabs-icon-top tabs-positive">
-		<ion-tab title="首页"
-		 icon-on="ion-ios-home" icon-off="ion-ios-home-outline">
-			<ion-header-bar class="bar-positive">
-				<h1 class="title">首页</h1>
-			</ion-header-bar>
-		</ion-tab>
-		<ion-tab title="交流"
-		 icon-on="ion-ios-chatbubble" icon-off="ion-ios-chatbubble-outline">
-			<ion-header-bar  class="bar-positive">
-				<h1 class="title">交流</h1>
-			</ion-header-bar>
-		</ion-tab>
-		<ion-tab title="设置"
-		 icon-on="ion-ios-gear" icon-off="ion-ios-gear-outline">
-			<ion-header-bar  class="bar-positive">
-				<h1 class="title">设置</h1>
-			</ion-header-bar>
-		</ion-tab>
-	</ion-tabs>
+  <div class="bar bar-header">
+    <a class="button button-clear icon ion-ios-telephone-outline"></a>
+    <h1 class="title">动卡空间·保险优选</h1>
+    <a class="button button-clear icon ion-ios-bell-outline"></a>
+  </div>
+
+  <div class="tabs tabs-top tabs-stable">
+    <a class="tab-item active">推荐</a>
+    <a class="tab-item active">滚吧·倒霉君</a>
+    <a class="tab-item active">旅行险</a>
+    <a class="tab-item active">运动险</a>
+    <a class="tab-item active">健康险</a>
+  </div>
+
+  <div class="scroll-content has-header has-tabs-top">
+    <div class="mb-card">
+      <div class="mb-card-box-bg">
+        <div class="mb-card-box">
+          <h4>车行万里路·人车保平安</h4>
+          <p>车品越好，保费越低</p>
+          <a class="button button-assertive button-small button-outline">立即参与</a>
+        </div>
+      </div>
+      <img src="./assets/images/car2.jpg" alt="">
+    </div>
+  </div>
+
+  <div class="tabs tabs-stable tabs-icon-top">
+    <a class="tab-item active">
+      <i class="icon ion-ios-box-outline"></i>买场
+    </a>
+    <a class="tab-item">
+      <i class="icon ion-ios-crop"></i>分类
+    </a>
+    <a class="tab-item">
+      <i class="icon ion-ios-pulse"></i>发现
+    </a>
+    <a class="tab-item">
+      <i class="icon ion-ios-person-outline"></i>我
+    </a>
+  </div>
 
   <%= require('html!./inc-footer.html') %>
 </body>
