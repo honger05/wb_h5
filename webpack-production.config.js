@@ -24,7 +24,7 @@ var route = [
 
 var proConfig = {
   entry: {
-    common: ['jquery', 'handlebars', 'h', 'z', 'common']
+    common: ['jquery', 'handlebars', 'common']
   },
   output: {
     path: distPath,
@@ -36,8 +36,6 @@ var proConfig = {
     alias: {
       'jquery': path.join(config.path.gallery, '/lib/jquery'),
       'handlebars': path.join(config.path.gallery, '/lib/handlebars'),
-      'h': path.join(config.path.gallery, '/h/seed'),
-      'z': path.join(config.path.gallery, '/z/seed'),
       'common': path.join(config.path.gallery, '/common/common')
     }
   },
@@ -110,14 +108,6 @@ var proConfig = {
       {
         test: path.join(config.path.gallery, '/common/common'),
         loader: 'expose?CMN'
-      },
-      {
-        test: path.join(config.path.gallery, '/h/seed'),
-        loader: 'expose?H'
-      },
-      {
-        test: path.join(config.path.gallery, '/z/seed'),
-        loader: 'expose?Z'
       },
       {
         test: /\.(woff|woff2|eot|ttf|svg)(\?.*$|$)/,
