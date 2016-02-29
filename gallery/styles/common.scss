@@ -4,3 +4,31 @@
 @import './utilities.scss';
 
 @import './widget/mb-card.scss';
+
+body {
+  overflow: auto;
+}
+
+.scroll-content {
+  overflow: auto;
+  bottom: 50px;
+}
+
+img {
+  width: 100%;
+}
+
+.mb-title {
+  text-align: center;
+  font-size: 18px;
+  margin: 20px 0 10px 0;
+  color: #333;
+
+  &-split {
+    display: block;
+    width: 35px;
+    height: 1px;
+    border-top: 1px solid red;
+    margin: 9px auto;
+  }
+}

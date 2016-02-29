@@ -7,7 +7,7 @@
   },
   "scripts": {
     "build": "webpack --config webpack-production.config.js --progress --colors",
-    "dev": "webpack-dev-server --config webpack-dev-server.config.js --progress --inline --colors"
+    "dev": "webpack-dev-server --config webpack-dev-server.config.js --progress --inline --colors --host 0.0.0.0"
   },
   "devDependencies": {
     "autoprefixer-loader": "^3.1.0",

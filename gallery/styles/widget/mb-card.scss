@@ -3,6 +3,10 @@
   position: relative;
   text-align: center;
 
+  img {
+    height: 200px;
+  }
+
   &-box {
     padding: 10px 0;
     background: rgba(255, 255, 255, 0.8);;
@@ -15,15 +19,30 @@
     padding: 5px;
     top: 50%;
     left: 50%;
-    margin-top: -90px;
+    margin-top: -68px;
     margin-left: -130px;
-  }
-
-  img {
-    width: 100%;
   }
 
   a.button {
     padding: 3px 20px;
+  }
+
+  &-bottom {
+    position: absolute;
+    bottom: 0;
+    background: rgba(255,255,255,0.9);
+    width: 100%;
+    text-align: left;
+    padding: 10px 1px;
+  }
+
+  &-rmb {
+    color: red;
+    padding-right: 5px;
+    border-right: 1px solid #333;
+
+    span {
+      font-size: 18px;
+    }
   }
 }
